@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> TIC TAC TOE</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    .gameboard {
+      background: #000;
+      color: #fff;
+      width: 300px;
+      overflow: hidden;
+      margin: 50px auto 0 auto;
+    }
+
+    #turn {
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
+      color: #000;
+      font-size: 25px;
+      background: #909497;
+    }
+
+    .gameboard .box {
+      float: left;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #fff;
+      transition: all .25s ease-in-out;
+      font-family: sans-serif;
+      font-size: 85px;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+
+    .gameboard .box:hover {
+      background: #BAB4B3;
+      color: #fff;
+    }
+
+    button {
+      background: #E74C3C;
+      color: #fff;
+      font-weight: bold;
+      border: 1px solid yellow;
+      cursor: pointer;
+      width: 200px;
+      height: 40px;
+      font-size: 22px;
+      display: block;
+      margin: 10px auto
+    }
+
+    .win {
+      background:  #26C281;
+      color: #fff
+    }
+  </style>
+</head>
+<body>
+  <div class="gameboard" id="main">
+    <span id="turn">Play</span>
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3"></div>
+    <div class="box" id="b4"></div>
+    <div class="box" id="b5"></div>
+    <div class="box" id="b6"></div>
+    <div class="box" id="b7"></div>
+    <div class="box" id="b8"></div>
+    <div class="box" id="b9"></div>
+  </div>
+  <button id="replay">Re-Start</button>
+
+<script type="text/javascript" src="TicTacToe.js"></script>
+</body>
+</html>
